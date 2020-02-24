@@ -18,7 +18,23 @@ isPrimeNumber(67);
 */
 
 var isPrimeNumber = function(num) {
-  // YOUR CODE HERE
+  if (num === 1) {
+    return false;
+  }
+  else if (num === 2) {
+    return true;
+  }else
+    {
+      for (var x = 2; x < num; x++)
+      {
+        if(num % x === 0)
+        {
+          return false;
+        }
+
+      }
+      return true;
+    }
 };
 
 // // Uncomment and copy into Chrome dev console to test your function! (One line at a time!)
