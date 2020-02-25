@@ -18,6 +18,7 @@ isPrimeNumber(67);
 */
 
 var isPrimeNumber = function(num) {
+<<<<<<< HEAD
   // Group Sourced Solution
   for (var i = 2; i <= (num - 1); i++ ) {
     if (num % i === 0) {
@@ -25,6 +26,25 @@ var isPrimeNumber = function(num) {
     }
   }
   return true;
+=======
+  if (num === 1) {
+    return false;
+  }
+  else if (num === 2) {
+    return true;
+  }else
+    {
+      for (var x = 2; x < num; x++)
+      {
+        if(num % x === 0)
+        {
+          return false;
+        }
+
+      }
+      return true;
+    }
+>>>>>>> 6dbc1b3c6b6ba6642c2c338611e050e8e6fd9158
 };
 
 // // Uncomment and copy into Chrome dev console to test your function! (One line at a time!)
