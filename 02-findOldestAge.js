@@ -12,35 +12,35 @@ var arr = [
     age: 16
   }
 ];
-//findOldestAge(myArr);
-//--> returns 34
+
+findOldestAge(myArr);
+--> returns 34
+
+*/
 
 
 
 
-
-function findOldestAge(arr) {
-    if(arr[0].age >= arr[1].age) {
-      return arr[0].age;
+var findOldestAge = function(array) {
+  var maxAge = 0;
+  for (var i = 0; i < array.length; i++) {
+    if (array[0].age > maxAge) {
+      maxAge = array[0].age;
     }
-   
-  
-    
- }
- 
+  }
+  return maxAge;
+};
 
+// // Uncomment and copy into Chrome dev console to test your function!
+var myArr = [
+  {
+    name: "Bill",
+    age: 34
+  },
+  {
+    name: "Derek",
+    age: 16
+  }
+];
+console.log(findOldestAge(myArr));
 
-largestOfFour();
-  
-  // // Uncomment and copy into Chrome dev console to test your function!
-  // var myArr = [
-  //   {
-  //     name: "Bill",
-  //     age: 34
-  //   },
-  //   {
-  //     name: "Derek",
-  //     age: 16
-  //   }
-  // ];
-  // console.log(findOldestAge(myArr));
