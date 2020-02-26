@@ -13,8 +13,10 @@ vowelCounter("Hawaii")
 
  */
 
- var vowelCounter = function(string) {
-  // YOUR CODE HERE
-};
+  const vowelCounter= str => Array.from(str)
+  .filter(letter => 'aeiou'.includes(letter)).length;
+
+vowelCounter("Banana");
 
 // console.log(vowelCounter("Banana"))
+
